@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Access Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GCTU KDS</label>
+        <ul>
+            <li><a class="active" href="keyreturnrecords.html">Key Logs</a></li>
+            <li><a href="index.html">Take Key</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <img src="GCTU-Logo.png" alt="">
+            <h1>GCTU Key Distribution System</h1>
+            <h2>Return Key</h2>
+            <form id="access-form">
+                <label for="id-input">Enter ID:</label>
+                <input type="text" id="id-input" required>
+                <label for="keyID">Select Key To Return</label>
+                <select name="keys" id="keyID">
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                    <option value="B4">B4</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                    <option value="G6">G6</option>
+                    <option value="G7">G7</option>
+                    <option value="conference-Room-1">Conference Room 1</option>
+                    <option value="conference-Room-2">Conference Room 2</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="message"></div>
+            <div id="staffmessage"></div>
+        </div>
+    </main>
+    <script src="return.js"></script>
+</body>
+
+</html>
