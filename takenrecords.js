@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function clearRecords() {
     if (confirm('Are you sure you want to clear?')) {
         console.log('Clearing records');
-        localStorage.removeItem('returnrecords');
-        localStorage.removeItem('returnrecords1');
+        localStorage.removeItem('records');
+        localStorage.removeItem('records1');
         window.location.href = 'keytakenrecords.html';
     } else {
         console.log('Cancel clicked');
